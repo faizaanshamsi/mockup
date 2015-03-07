@@ -15,7 +15,11 @@
     </div>
     <div class="main-pane col-md-7">
       <h1>Main Pane</h1>
-      {{outlet}}
+      {{#each signal in signals}}
+        {{signal-notification signal=signal}}
+      {{/each}}
     </div>
+
+    {{outlet}}
   </div>
 </div>
