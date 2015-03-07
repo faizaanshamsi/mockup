@@ -1,3 +1,21 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
 
-{{outlet}}
+<div class="container-fluid">
+  <div class="row">
+    <div class="left-pane col-lg-5">
+      <h1>Left Pane</h1>
+    </div>
+    <div class="main-pane col-md-7">
+      <h1>Main Pane</h1>
+      {{outlet}}
+    </div>
+  </div>
+</div>
