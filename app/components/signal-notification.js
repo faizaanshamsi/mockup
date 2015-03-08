@@ -5,5 +5,9 @@ export default Ember.Component.extend({
   ticker: Ember.computed.alias('signal.ticker'),
   direction: Ember.computed.alias('signal.direction'),
   timestamp: Ember.computed.alias('signal.timestamp'),
-  price: Ember.computed.alias('signal.price')
+  price: Ember.computed.alias('signal.price'),
+
+  signalArrow: function() {
+    return this.get('direction') === "up" ? "fa-arrow-up fa-lg" : "fa-arrow-down fa-lg"
+  }.property('direction')
 });
