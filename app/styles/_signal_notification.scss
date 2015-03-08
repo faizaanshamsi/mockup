@@ -1,0 +1,20 @@
+.signal-notification {
+  min-height: 3em;
+  padding: 1em;
+  margin: 0.5em;
+  text-align: center;
+  border: 1px solid $maroon;
+  border-radius: 0.5em;
+
+  .signal-ticker {
+    font-family: $font-bold;
+  }
+}
+
+.up {
+  background-color: $light-green;
+}
+
+.down {
+  background-color: $light-red;
+}
