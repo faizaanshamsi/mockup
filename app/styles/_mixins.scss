@@ -1,0 +1,15 @@
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+@mixin transition-all($transition-time) {
+  -moz-transition: all $transition-time;
+  -webkit-transition: all $transition-time;
+  -ms-transition: all $transition-time;
+  -o-transition: all $transition-time;
+  transition: all $transition-time;
+}

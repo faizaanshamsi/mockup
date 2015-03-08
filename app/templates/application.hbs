@@ -14,13 +14,11 @@
 <div class="container-fluid">
   <div class="row">
     <div class="left-pane col-md-3">
-      <h1>Left Pane</h1>
       {{#each stock in pinnedStocks}}
         {{stock-pin stock=stock}}
       {{/each}}
     </div>
     <div class="main-pane col-md-9">
-      <h1>Main Pane</h1>
       {{#each signal in signals}}
         {{signal-notification signal=signal}}
       {{/each}}

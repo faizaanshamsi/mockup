@@ -1,1 +1,4 @@
-{{stock.ticker}}
+<div {{bind-attr class=":stock-pin isHit:hit:not-hit"}}>
+  {{stock.ticker}}
+  <button {{action 'getHit'}}>Hit</button>
+</div>

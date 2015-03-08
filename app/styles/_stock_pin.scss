@@ -1,0 +1,18 @@
+.stock-pin {
+  background-color: $light-gray;
+  min-height: 3em;
+  padding: 1em;
+  margin: 0.5em;
+  font-family: $font-bold;
+  text-align: center;
+}
+
+.hit {
+  @include transition(background-color, 200ms, ease-in);
+  background-color: $maroon;
+}
+
+.not-hit {
+  @include transition(background-color, 5000ms, ease-in);
+  background-color: $light-gray;
+}
