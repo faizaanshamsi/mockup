@@ -25,5 +25,19 @@ export default Ember.Route.extend({
     }]
 
     return signals;
+  },
+
+  setupController: function(controller, model) {
+    this._super(controller, model);
+    var pinnedStocks = [{
+      ticker: "GOOGL"
+    },
+    {
+      ticker: "MSFT"
+    },
+    {
+      ticker: "AAPL"
+    }]
+    controller.set('pinnedStocks', pinnedStocks);
   }
 });
