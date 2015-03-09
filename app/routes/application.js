@@ -26,7 +26,7 @@ export default Ember.Route.extend({
      {
       name: "200 Day Moving Average",
       ticker: "SWM",
-      timestamp: "10:10:10",
+      timestamp: "10:01:19",
       direction: "down",
       price: 60.50
     }]
