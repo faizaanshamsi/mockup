@@ -1,9 +1,13 @@
 /* Import this before anything that will override it */
-@import "bootstrap";
-@import "bootstrap_overrides";
 @import "colors";
 @import "fonts";
 @import "variables";
+@import "bootstrap";
+@import "bootstrap_overrides";
 @import "mixins";
 @import "signal_notification";
 @import "stock_pin";
+
+body {
+  background-color: $body-bg;
+}
