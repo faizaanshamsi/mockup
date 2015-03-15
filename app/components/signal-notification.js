@@ -9,5 +9,16 @@ export default Ember.Component.extend({
 
   signalArrow: function() {
     return this.get('direction') === "up" ? "fa-arrow-up fa-lg" : "fa-arrow-down fa-lg"
-  }.property('direction')
+  }.property('direction'),
+
+  actions: {
+    getSound: function() {
+      var name = this.get('name');
+      var ticker = this.get('ticker');
+      var direction = this.get('direction');
+      var msg = ticker + " " + name + " hit " + direction;
+      var utterance = new SpeechSynthesisUtterance(msg);
+      window.speechSynthesis.speak(utterance);
+    }
+  }
 });
